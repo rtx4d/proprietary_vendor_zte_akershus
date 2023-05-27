@@ -35,25 +35,6 @@
                        0x40800100, 0xFFF, 0x41800000, 140, 0x40400000, 0x1, 0x42C10000, 0x1,
                        0x43000000, 0xFF, 0x43400000, 0xFFFF, 0x4281C000, 2000" />
 
-    <!--resume boost-->
-        <!-- SCHEDBOOST resource opcode, value-->
-        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
-        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
-        <!-- CPUBW_MIN_FREQ resource opcode, value-->
-        <!-- POWER COLLAPSE resource opcode, value-->
-        <!-- STORAGE CLK SCALING resource opcode, value-->
-        <!-- LLCCBW resource opcode, value-->
-        <!-- L3 resource opcode, value-->
-        <!-- GPU DISABLE resource opcode, value-->
-
-        <Config
-            Id="0x00001082" Type="1" Enable="true" Timeout="400" Target="sdm845"
-            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 0x8C6,
-                       0x40800100, 0xFFF, 0x41800000, 140, 0x40400000, 0x1, 0x42C10000, 0x1,
-                       0x43000000, 0xFF, 0x43400000, 0xFFFF, 0x4281C000, 400" />
-
     <!--app lauch boost (disabling packing)-->
 
         <!-- Type="2", launch boost for disable packing 1.5sec -->
@@ -86,7 +67,7 @@
         <Config
             Id="0x00001080" Type="1" Enable="true" Target="sdm845"
             Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40C00000, 0x2,
-                       0x43400000, 0x1F40" />
+                       0x43400000, 0x1F40, 0X42804000, 0" />
 
     <!--Prefling Scroll boost-->
         <!-- LLCBW_MIN_FREQ resource opcode, value-->
@@ -99,7 +80,7 @@
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="sdm845"
             Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40C00000, 0x2,
-                       0x43400000, 0x1F40" />
+                       0x43400000, 0x1F40, 0X42804000, 0" />
 
     <!--Horizontal Scroll boost-->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -107,7 +88,7 @@
         <!-- Type="2", Horizontal Scroll boost -->
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="sdm845"
-            Resources="0x40C00000, 0x2" />
+            Resources="0x40C00000, 0x2, 0X42804000, 0" />
 
     <!--Drag boost-->
         <!-- LLCBW_MIN_FREQ resource opcode, value-->
@@ -120,7 +101,7 @@
         <Config
             Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="sdm845"
             Resources="0x43000000, 0x11, 0x40800000, 1000, 0x40800100, 1000, 0x40C00000, 0x2,
-                       0x43400000, 0x1F40" />
+                       0x43400000, 0x1F40, 0X42804000, 0" />
 
     <!--PackageInstall boost-->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -132,8 +113,8 @@
 
         <Config
             Id="0x00001088" Enable="true" Target="sdm845"
-            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 0xFFF,
-                       0x40800100, 0xFFF, 0x43000000, 0xFF, 0x43400000, 0xFF, 0x40400000, 1" />
+            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000,0xFFF,
+                       0x40800100,0xFFF" />
 
     <!--Rotation latency boost-->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -169,22 +150,4 @@
                 Resources="0x40000000, 0x0" />
 
     </PerfBoost>
-
-    <!--XiaoMi bluetooth boost-->
-        <!-- SCHEDBOOST resource opcode, value-->
-        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
-        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
-        <!-- CPUBW_MIN_FREQ resource opcode, value-->
-        <!-- POWER COLLAPSE resource opcode, value-->
-        <!-- LLCCBW resource opcode, value-->
-        <!-- L3 resource opcode, value-->
-        <!-- GPU DISABLE resource opcode, value-->
-
-        <Config
-            Id="0x00011C0" Type="1" Enable="true" Timeout="3000" Target="sdm845"
-            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 0xFFF,
-                       0x40800100, 0xFFF, 0x41800000, 140, 0x40400000, 0x1,
-                       0x43000000, 0xFF, 0x43400000, 0xFFFF" />
 </BoostConfigs>

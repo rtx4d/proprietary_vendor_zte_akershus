@@ -350,8 +350,8 @@
             </BIT7>
           <!-- 1920x1080p60  -->
             <BIT8>
-                <MinBitrate>10000000</MinBitrate>
-                <MaxBitrate>20000000</MaxBitrate>
+                <MinBitrate>7000000</MinBitrate>
+                <MaxBitrate>13000000</MaxBitrate>
             </BIT8>
           <!-- 1920x1080i60  -->
             <BIT9>
@@ -698,7 +698,7 @@
         To disable/enable audio stream playback
         support during power suspend - 0 or 1
     -->
-    <AudioStreamInSuspend>0</AudioStreamInSuspend>
+    <AudioStreamInSuspend>1</AudioStreamInSuspend>
 
     <!--
         Compensation delay for audio
@@ -736,7 +736,7 @@
     -->
     <PeriodicIDRSettings>
         <PeriodicIDRValid>1</PeriodicIDRValid>
-        <PeriodicIDRInterval>5</PeriodicIDRInterval>
+        <PeriodicIDRInterval>1</PeriodicIDRInterval>
     </PeriodicIDRSettings>
 
 
