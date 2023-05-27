@@ -56,6 +56,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "com.qualcomm.location",
+	owner: "nubia",
+	apk: "proprietary/system/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "CneApp",
 	owner: "nubia",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
@@ -164,6 +175,18 @@ dex_import {
 }
 
 dex_import {
+	name: "com.qti.location.sdk",
+	owner: "nubia",
+	jars: ["proprietary/system/framework/com.qti.location.sdk.jar"],
+}
+
+dex_import {
+	name: "izat.xt.srv",
+	owner: "nubia",
+	jars: ["proprietary/system/framework/izat.xt.srv.jar"],
+}
+
+dex_import {
 	name: "tcmclient",
 	owner: "nubia",
 	jars: ["proprietary/system/framework/tcmclient.jar"],
@@ -216,5 +239,23 @@ dex_import {
 	owner: "nubia",
 	jars: ["proprietary/product/framework/qcrilhook.jar"],
 	product_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.gnss@2.0-service-qti",
+	owner: "nubia",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.qti.gnss@3.0-service",
+	owner: "nubia",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
 }
 
