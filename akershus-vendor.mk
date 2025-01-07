@@ -134,24 +134,22 @@ PRODUCT_COPY_FILES += \
     vendor/zte/akershus/proprietary/vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_workspaceFile.qwsp \
     vendor/zte/akershus/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
     vendor/zte/akershus/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
+    vendor/zte/akershus/proprietary/vendor/etc/camera/LDC_packdata_ZTE_project6161_07F.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/LDC_packdata_ZTE_project6161_07F.dat \
     vendor/zte/akershus/proprietary/vendor/etc/camera/VfbTuningInterface.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/VfbTuningInterface.xml \
     vendor/zte/akershus/proprietary/vendor/etc/camera/beautiful_app/preference_beautify0.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_app/preference_beautify0.json \
     vendor/zte/akershus/proprietary/vendor/etc/camera/beautiful_app/preference_beautify1.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_app/preference_beautify1.json \
     vendor/zte/akershus/proprietary/vendor/etc/camera/beautiful_app/preference_beautify2.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_app/preference_beautify2.json \
-    vendor/zte/akershus/proprietary/vendor/etc/camera/beautiful_app/switch_sensor0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_app/switch_sensor0.xml \
-    vendor/zte/akershus/proprietary/vendor/etc/camera/beautiful_app/switch_sensor1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_app/switch_sensor1.xml \
     vendor/zte/akershus/proprietary/vendor/etc/camera/beautiful_fn/fn_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_fn/fn_default.xml \
-    vendor/zte/akershus/proprietary/vendor/etc/camera/beautiful_fn/fn_imx363.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_fn/fn_imx363.xml \
-    vendor/zte/akershus/proprietary/vendor/etc/camera/beautiful_fn/fn_s5k3t1_aux.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_fn/fn_s5k3t1_aux.xml \
-    vendor/zte/akershus/proprietary/vendor/etc/camera/beautiful_fn/fn_s5k3t1_front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_fn/fn_s5k3t1_front.xml \
-    vendor/zte/akershus/proprietary/vendor/etc/camera/beautiful_fn/fn_sensor:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_fn/fn_sensor \
     vendor/zte/akershus/proprietary/vendor/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt \
     vendor/zte/akershus/proprietary/vendor/etc/camera/color_filters_glinfo.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/color_filters_glinfo.bin \
-    vendor/zte/akershus/proprietary/vendor/etc/camera/ldc_tbl_2560x1920.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ldc_tbl_2560x1920.bin \
-    vendor/zte/akershus/proprietary/vendor/etc/camera/ldc_tbl_5168x3876.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ldc_tbl_5168x3876.bin \
+    vendor/zte/akershus/proprietary/vendor/etc/camera/color_filters_glinfo64.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/color_filters_glinfo64.bin \
+    vendor/zte/akershus/proprietary/vendor/etc/camera/fonts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fonts.xml \
+    vendor/zte/akershus/proprietary/vendor/etc/camera/fonts/NotoColorEmoji.ttf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fonts/NotoColorEmoji.ttf \
+    vendor/zte/akershus/proprietary/vendor/etc/camera/fonts/Roboto-Medium.ttf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fonts/Roboto-Medium.ttf \
     vendor/zte/akershus/proprietary/vendor/etc/camera/model_128.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_128.dlc \
     vendor/zte/akershus/proprietary/vendor/etc/camera/model_32.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_32.dlc \
     vendor/zte/akershus/proprietary/vendor/etc/camera/vfbglinfo.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vfbglinfo.bin \
+    vendor/zte/akershus/proprietary/vendor/etc/camera/vfbglinfo64.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vfbglinfo64.bin \
     vendor/zte/akershus/proprietary/vendor/etc/cne/profileSlm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileSlm.xml \
     vendor/zte/akershus/proprietary/vendor/etc/cne/slm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/slm.conf \
     vendor/zte/akershus/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
@@ -355,27 +353,33 @@ PRODUCT_COPY_FILES += \
     vendor/zte/akershus/proprietary/vendor/lib/camera/com.qti.tuned.zte_imx363_hz.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.zte_imx363_hz.bin \
     vendor/zte/akershus/proprietary/vendor/lib/camera/com.qti.tuned.zte_s5k3t1sp_aux.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.zte_s5k3t1sp_aux.bin \
     vendor/zte/akershus/proprietary/vendor/lib/camera/com.qti.tuned.zte_s5k3t1sp_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.zte_s5k3t1sp_front.bin \
-    vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.arcsoft.node.capturebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.arcsoft.node.capturebokeh.so \
-    vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.arcsoft.node.realtimebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.arcsoft.node.realtimebokeh.so \
+    vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.camx.chiiqutils.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv2.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv3.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.hvx.addconstant.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.hvx.addconstant.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.hvx.binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.hvx.binning.so \
+    vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.node.depth.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.depth.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.node.dummyrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.dummyrtb.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.node.dummysat.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.dummysat.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.eisv2.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.node.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.eisv3.so \
+    vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.node.fcv.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.fcv.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.node.gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.gpu.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.memcpy.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.node.remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.remosaic.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.node.stich.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.stich.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swregistration.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.aec.so \
+    vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.stats.aecwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.aecwrapper.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.af.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.afd.so \
+    vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.stats.afwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.afwrapper.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.asd.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.awb.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.stats.awbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.awbwrapper.so \
+    vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.haf.so \
+    vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.stats.hafoverride.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.hafoverride.so \
+    vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.stats.localhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.localhistogram.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlib.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlibsony.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlibwrapper.so \
@@ -383,14 +387,16 @@ PRODUCT_COPY_FILES += \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.af.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.awb.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.pdlib.so \
+    vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.zte.node.capturebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.zte.node.capturebokeh.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.zte.node.capturepostprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.zte.node.capturepostprocess.so \
+    vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.zte.node.realtimebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.zte.node.realtimebokeh.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.zte.node.realtimepostprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.zte.node.realtimepostprocess.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/components/com.zte.node.videopostprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.zte.node.videopostprocess.so \
+    vendor/zte/akershus/proprietary/vendor/lib/camera/components/libdepthmapwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/libdepthmapwrapper.so \
     vendor/zte/akershus/proprietary/vendor/lib/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreview.bin \
     vendor/zte/akershus/proprietary/vendor/lib/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreviewlite.bin \
     vendor/zte/akershus/proprietary/vendor/lib/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideo.bin \
     vendor/zte/akershus/proprietary/vendor/lib/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideolite.bin \
-    vendor/zte/akershus/proprietary/vendor/lib/camera/titan17x_usecases.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/titan17x_usecases.bin \
     vendor/zte/akershus/proprietary/vendor/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/zte/akershus/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglSubDriverAndroid.so \
     vendor/zte/akershus/proprietary/vendor/lib/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libEGL_adreno.so \
@@ -458,6 +464,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/akershus/proprietary/vendor/lib/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_utils.so \
     vendor/zte/akershus/proprietary/vendor/lib/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_default_listener.so \
     vendor/zte/akershus/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
+    vendor/zte/akershus/proprietary/vendor/lib/libalLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalLDC.so \
     vendor/zte/akershus/proprietary/vendor/lib/libalhLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalhLDC.so \
     vendor/zte/akershus/proprietary/vendor/lib/libarcsoft_dualcam_portraitlighting.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_portraitlighting.so \
     vendor/zte/akershus/proprietary/vendor/lib/libarcsoft_dualcam_refocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus.so \
@@ -469,15 +476,19 @@ PRODUCT_COPY_FILES += \
     vendor/zte/akershus/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
     vendor/zte/akershus/proprietary/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so \
     vendor/zte/akershus/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
+    vendor/zte/akershus/proprietary/vendor/lib/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_nn_stub.so \
     vendor/zte/akershus/proprietary/vendor/lib/libcamxeffect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxeffect.so \
     vendor/zte/akershus/proprietary/vendor/lib/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdalgov7.so \
+    vendor/zte/akershus/proprietary/vendor/lib/libcamxfdalgov8.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdalgov8.so \
     vendor/zte/akershus/proprietary/vendor/lib/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdengine.so \
     vendor/zte/akershus/proprietary/vendor/lib/libcamxmoviesolid.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxmoviesolid.so \
     vendor/zte/akershus/proprietary/vendor/lib/libcamxportraitbokehwrap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxportraitbokehwrap.so \
     vendor/zte/akershus/proprietary/vendor/lib/libcamxselfiebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxselfiebokeh.so \
     vendor/zte/akershus/proprietary/vendor/lib/libcamxskinbeautiful.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxskinbeautiful.so \
     vendor/zte/akershus/proprietary/vendor/lib/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxstatscore.so \
+    vendor/zte/akershus/proprietary/vendor/lib/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxswprocessalgo.so \
     vendor/zte/akershus/proprietary/vendor/lib/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxtintlessalgo.so \
+    vendor/zte/akershus/proprietary/vendor/lib/libcamxwatermark.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxwatermark.so \
     vendor/zte/akershus/proprietary/vendor/lib/libcamxwidelencalc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxwidelencalc.so \
     vendor/zte/akershus/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
     vendor/zte/akershus/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
@@ -498,7 +509,6 @@ PRODUCT_COPY_FILES += \
     vendor/zte/akershus/proprietary/vendor/lib/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvdsp_stub.so \
     vendor/zte/akershus/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
     vendor/zte/akershus/proprietary/vendor/lib/libfastrpc_utf_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastrpc_utf_stub.so \
-    vendor/zte/akershus/proprietary/vendor/lib/libfn_facebeauty.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfn_facebeauty.so \
     vendor/zte/akershus/proprietary/vendor/lib/libfnxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfnxml.so \
     vendor/zte/akershus/proprietary/vendor/lib/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-calwrapper.so \
     vendor/zte/akershus/proprietary/vendor/lib/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-ipc.so \
@@ -519,7 +529,6 @@ PRODUCT_COPY_FILES += \
     vendor/zte/akershus/proprietary/vendor/lib/liblistensoundmodel2.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblistensoundmodel2.so \
     vendor/zte/akershus/proprietary/vendor/lib/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-glnext.so \
     vendor/zte/akershus/proprietary/vendor/lib/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qcom.so \
-    vendor/zte/akershus/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
     vendor/zte/akershus/proprietary/vendor/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc.so \
     vendor/zte/akershus/proprietary/vendor/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc2.so \
     vendor/zte/akershus/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
@@ -568,6 +577,8 @@ PRODUCT_COPY_FILES += \
     vendor/zte/akershus/proprietary/vendor/lib/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui_svcsock.so \
     vendor/zte/akershus/proprietary/vendor/lib/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorcal.so \
     vendor/zte/akershus/proprietary/vendor/lib/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorslog.so \
+    vendor/zte/akershus/proprietary/vendor/lib/libskia.so:$(TARGET_COPY_OUT_VENDOR)/lib/libskia.so \
+    vendor/zte/akershus/proprietary/vendor/lib/libskia_watermark.so:$(TARGET_COPY_OUT_VENDOR)/lib/libskia_watermark.so \
     vendor/zte/akershus/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
     vendor/zte/akershus/proprietary/vendor/lib/libsndmonitor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsndmonitor.so \
     vendor/zte/akershus/proprietary/vendor/lib/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_device_mode_stub.so \
@@ -582,7 +593,6 @@ PRODUCT_COPY_FILES += \
     vendor/zte/akershus/proprietary/vendor/lib/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc_default_listener.so \
     vendor/zte/akershus/proprietary/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so \
     vendor/zte/akershus/proprietary/vendor/lib/libstdc++.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstdc++.so \
-    vendor/zte/akershus/proprietary/vendor/lib/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswregistrationalgo.so \
     vendor/zte/akershus/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
     vendor/zte/akershus/proprietary/vendor/lib/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysmon_cdsp_skel.so \
     vendor/zte/akershus/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
