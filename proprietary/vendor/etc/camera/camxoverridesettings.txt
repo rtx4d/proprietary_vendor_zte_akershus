@@ -14,4 +14,4 @@ logInfoMask=0
 logPerfInfoMask=0
 waitAllResultsTimeout=1000
 advanceFeatureMask=3
-enableNCSService=FALSE
+enableNCSService=TRUE
