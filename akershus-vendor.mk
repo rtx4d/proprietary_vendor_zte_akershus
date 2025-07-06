@@ -288,16 +288,6 @@ PRODUCT_PACKAGES += \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
-    libOmxAacDec \
-    libOmxAlacDec \
-    libOmxAmrDec \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
-    libOmxEvrcDec \
-    libOmxG711Dec \
-    libOmxQcelp13Dec \
-    libOmxVpp \
-    libOmxWmaDec \
     libOpenCL \
     libQSEEComAPI \
     libQTEEConnector_vendor \
@@ -485,8 +475,7 @@ PRODUCT_PACKAGES += \
     camera.qcom \
     com.qti.chi.override \
     libFNVfbEngineHAL \
-    libOmxDsdDec \
-    libOmxVideoDSMode \
+    libOmxVpp \
     libZEffectLib \
     libadm \
     libadpcmdec \
@@ -505,7 +494,6 @@ PRODUCT_PACKAGES += \
     libcamxwidelencalc \
     libcom.qti.chinodeutils \
     libcppf \
-    libdsd2pcm \
     libfastcrc \
     libfn_facebeauty \
     libfnxml \
