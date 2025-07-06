@@ -12,8 +12,8 @@ PRODUCT_COPY_FILES += \
     vendor/zte/akershus/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/zte/akershus/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
     vendor/zte/akershus/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
-    vendor/zte/akershus/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/zte/akershus/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
+    vendor/zte/akershus/proprietary/system_ext/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephonyservice.xml \
     vendor/zte/akershus/proprietary/vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
     vendor/zte/akershus/proprietary/vendor/etc/acdbdata/MTP/MTP_Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Codec_cal.acdb \
     vendor/zte/akershus/proprietary/vendor/etc/acdbdata/MTP/MTP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_General_cal.acdb \
@@ -52,6 +52,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/akershus/proprietary/vendor/etc/camera/model_128.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_128.dlc \
     vendor/zte/akershus/proprietary/vendor/etc/camera/model_32.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_32.dlc \
     vendor/zte/akershus/proprietary/vendor/etc/camera/vfbglinfo.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vfbglinfo.bin \
+    vendor/zte/akershus/proprietary/vendor/etc/cne/profileSlm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileSlm.xml \
     vendor/zte/akershus/proprietary/vendor/etc/cne/slm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/slm.conf \
     vendor/zte/akershus/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/zte/akershus/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
@@ -83,6 +84,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/akershus/proprietary/vendor/etc/configstore/vpp.configstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/vpp.configstore.xml \
     vendor/zte/akershus/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/zte/akershus/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
+    vendor/zte/akershus/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
     vendor/zte/akershus/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/zte/akershus/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/zte/akershus/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
@@ -113,6 +115,8 @@ PRODUCT_COPY_FILES += \
     vendor/zte/akershus/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/zte/akershus/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
     vendor/zte/akershus/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
+    vendor/zte/akershus/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
+    vendor/zte/akershus/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/zte/akershus/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/zte/akershus/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     vendor/zte/akershus/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
@@ -202,6 +206,8 @@ PRODUCT_COPY_FILES += \
     vendor/zte/akershus/proprietary/vendor/etc/sensors/config/tmx4903.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tmx4903.json \
     vendor/zte/akershus/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/zte/akershus/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
+    vendor/zte/akershus/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
+    vendor/zte/akershus/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/zte/akershus/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/zte/akershus/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/zte/akershus/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
@@ -257,7 +263,8 @@ PRODUCT_COPY_FILES += \
     vendor/zte/akershus/proprietary/vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/3_version_update_wps_config.sql \
     vendor/zte/akershus/proprietary/vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_update_ecc_table.sql \
     vendor/zte/akershus/proprietary/vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_update_ecc_table.sql \
-    vendor/zte/akershus/proprietary/vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
+    vendor/zte/akershus/proprietary/vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/6_version_update_ecc_table.sql \
+    vendor/zte/akershus/proprietary/vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
     eglSubDriverAndroid \
@@ -288,14 +295,10 @@ PRODUCT_PACKAGES += \
     libidl \
     libllvm-glnext \
     libllvm-qcom \
-    liblqe \
     libmdmdetect \
-    libpdmapper \
-    libpdnotifier \
     libpvr \
     libpwirispq \
     libqcmaputils \
-    libqcrilFramework \
     libqmi \
     libqmi_cci \
     libqmi_client_helper \
@@ -304,12 +307,6 @@ PRODUCT_PACKAGES += \
     libqmi_csi \
     libqmi_encdec \
     libqmiservices \
-    libqrtr \
-    libqsocket \
-    libril-qc-ltedirectdisc \
-    libril-qc-radioconfig \
-    libril-qcril-hook-oem \
-    librilqmiservices \
     libscveBlobDescriptor \
     libscveBlobDescriptor_stub \
     libscveCommon \
@@ -323,7 +320,6 @@ PRODUCT_PACKAGES += \
     libscveScan3D \
     libsdsprpc \
     libsensorslog \
-    libsettings \
     libsns_device_mode_stub \
     libsns_fastRPC_util \
     libsns_low_lat_stream_stub \
@@ -332,14 +328,11 @@ PRODUCT_PACKAGES += \
     libssc \
     libssc_default_listener \
     libsysmon_cdsp_skel \
-    libsystem_health_mon \
     libthermalclient \
     libtime_genoff \
     libvppclient \
     libvpphvx \
     libvpplibrary \
-    qcrild_librilutils \
-    qtimutex \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     com.qti.ois.ois_bu63169 \
@@ -441,6 +434,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.imscmservice@2.2_vendor \
     com.qualcomm.qti.uceservice@2.0_vendor \
     com.qualcomm.qti.uceservice@2.1_vendor \
+    com.qualcomm.qti.uceservice@2.2_vendor \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss@2.1-impl-qti \
@@ -463,6 +457,7 @@ PRODUCT_PACKAGES += \
     lib-imsrcsbaseimpl \
     lib-imsvtcore \
     lib-imsxml \
+    lib-rcsconfig \
     lib-rtpcommon \
     lib-rtpcore \
     lib-rtpsl \
@@ -516,25 +511,36 @@ PRODUCT_PACKAGES += \
     liblocationservice_glue \
     liblowi_client \
     liblowi_wifihal \
+    liblqe \
     libminkdescriptor \
     libminksocket \
     libmmosal_vendor \
-    libmodemapi_vendor \
     libnetmgr \
     libnetmgr_common \
     libnetmgr_nr_fusion \
     libnetmgr_rmnet_ext \
     libnlnetmgr \
+    libpdmapper \
+    libpdnotifier \
     libperipheral_client \
     libqcbor \
     libqcc_file_agent \
+    libqcrilFramework \
+    libqcrildatactl \
     libqdi \
     libqdma_file_agent \
     libqdp \
     libqisl \
+    libqrtr \
     libqseed3 \
+    libqsocket \
     librcc \
     libril-qc-hal-qmi \
+    libril-qc-logger \
+    libril-qc-ltedirectdisc \
+    libril-qc-radioconfig \
+    libril-qcril-hook-oem \
+    librilqmiservices \
     librpmb \
     libsdedrm \
     libsdm-color \
@@ -544,21 +550,24 @@ PRODUCT_PACKAGES += \
     libsecureui \
     libsecureui_svcsock \
     libsensorcal \
+    libsettings \
     libslimclient \
     libspcom \
     libspl \
     libssd \
+    libsystem_health_mon \
     libtinyxml2_1 \
     libtrustedapploader \
     libtzdrmgenprov \
-    libvendorutils \
     libwms \
     libwqe \
     libwvhidl \
     libxml \
     libxtadapter \
     libwvdrmengine \
+    qcrild_librilutils \
     qtibus \
+    qtimutex \
     sensors.ssc \
     unnhal-acc-adreno \
     unnhal-acc-common \
@@ -626,14 +635,16 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.slmadapter@1.0 \
     vendor.qti.hardware.soter@1.0 \
     vendor.qti.hardware.tui_comm@1.0 \
+    vendor.qti.ims.callcapability@1.0 \
     vendor.qti.ims.callinfo@1.0_vendor \
+    vendor.qti.ims.factory@1.0 \
     vendor.qti.ims.rcsconfig@1.0_vendor \
-    vendor.qti.ims.rcsconfig@1.1_vendor \
-    vendor.qti.imsrtpservice@2.0_vendor \
-    vendor.qti.imsrtpservice@2.1-service-Impl \
-    vendor.qti.imsrtpservice@2.1_vendor \
+    vendor.qti.ims.rcsconfig@1.1 \
+    vendor.qti.ims.rcsconfig@2.0 \
+    vendor.qti.ims.rcsconfig@2.1 \
+    vendor.qti.imsrtpservice@3.0-service-Impl \
+    vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.latency@2.0 \
-    vendor.zte.hardware.radio@1.0 \
     libFastRPC_UTF_Forward_skel \
     libVC1Dec \
     libVC1DecDsp_skel \
@@ -658,6 +669,12 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.imscmservice@2.2 \
     com.qualcomm.qti.uceservice@2.0 \
     com.qualcomm.qti.uceservice@2.1 \
+    com.qualcomm.qti.uceservice@2.2 \
+    com.quicinc.cne.api@1.0 \
+    com.quicinc.cne.api@1.1 \
+    com.quicinc.cne.constants@1.0 \
+    com.quicinc.cne.constants@2.0 \
+    com.quicinc.cne.constants@2.1 \
     lib-imsvideocodec \
     lib-imsvt \
     lib-imsvtextutils \
@@ -671,6 +688,14 @@ PRODUCT_PACKAGES += \
     libimscamera_jni \
     libimsmedia_jni \
     vendor.qti.diaghal@1.0 \
+    vendor.qti.hardware.data.cne.internal.api@1.0 \
+    vendor.qti.hardware.data.cne.internal.constants@1.0 \
+    vendor.qti.hardware.data.cne.internal.server@1.0 \
+    vendor.qti.hardware.data.connection@1.0 \
+    vendor.qti.hardware.data.connection@1.1 \
+    vendor.qti.hardware.data.dynamicdds@1.0 \
+    vendor.qti.hardware.data.iwlan@1.0 \
+    vendor.qti.hardware.data.qmi@1.0 \
     vendor.qti.hardware.radio.ims@1.0 \
     vendor.qti.hardware.radio.ims@1.1 \
     vendor.qti.hardware.radio.ims@1.2 \
@@ -678,9 +703,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.ims@1.4 \
     vendor.qti.ims.callinfo@1.0 \
     vendor.qti.ims.rcsconfig@1.0 \
-    vendor.qti.ims.rcsconfig@1.1 \
-    vendor.qti.imsrtpservice@2.0 \
-    vendor.qti.imsrtpservice@2.1 \
+    vendor.qti.imsrtpservice@3.0 \
     CneApp \
     IWlanService \
     TimeService \
@@ -693,13 +716,24 @@ PRODUCT_PACKAGES += \
     audiosphere \
     tcmclient \
     com.qti.dpmframework \
+    com.quicinc.cne.api-V1.1-java \
+    com.quicinc.cne.constants-V1.0-java \
+    com.quicinc.cne.constants-V2.0-java \
+    com.quicinc.cne.constants-V2.1-java \
     dpmapi \
     qcrilhook \
-    qti-telephony-common \
+    vendor.qti.hardware.data.cne.internal.api-V1.0-java \
+    vendor.qti.hardware.data.cne.internal.constants-V1.0-java \
+    vendor.qti.hardware.data.connection-V1.0-java \
+    vendor.qti.hardware.data.connection-V1.1-java \
+    vendor.qti.hardware.data.dynamicdds-V1.0-java \
+    vendor.qti.hardware.data.iwlan-V1.0-java \
+    vendor.qti.hardware.data.qmi-V1.0-java \
     android.hardware.gnss@2.1-service-qti.xml \
     android.hardware.neuralnetworks@1.3-service-qti.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     vendor.qti.gnss@4.0-service.xml \
+    ATFWD-daemon \
     adpl \
     adsprpcd \
     cdsprpcd \
@@ -728,6 +762,7 @@ PRODUCT_PACKAGES += \
     imsqmidaemon \
     imsrcsd \
     irsc_util \
+    ks \
     loc_launcher \
     lowi-server \
     mlid \
@@ -750,6 +785,8 @@ PRODUCT_PACKAGES += \
     sensors.qti \
     slim_daemon \
     sscrpcd \
+    ssgqmigd \
+    ssgtzd \
     tftp_server \
     thermal-engine \
     time_daemon \
@@ -760,8 +797,6 @@ PRODUCT_PACKAGES += \
     dpmd
 
 PRODUCT_PACKAGES += \
-    system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
-    system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
     vendor_lib_libEGL_adreno_so \
     vendor_lib_libGLESv2_adreno_so \
     vendor_lib_libq3dtools_adreno_so \
