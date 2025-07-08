@@ -289,7 +289,6 @@ PRODUCT_PACKAGES += \
     libdsutils \
     libfastcvdsp_stub \
     libfastcvopt \
-    libfastrpc_utf_stub \
     libgpudataproducer \
     libgsl \
     libidl \
